@@ -1,15 +1,7 @@
 {
-    // Options for PDF generation
     "pdf": {
-
-        // ...
-        // Font size for the file content
         "fontSize": 12,
-
-        // Remove the page numbers from the footer
         "pageNumbers": False
-        
-        // Set the page margins
         "margin": {
             top: "45"
             bottom: "45"
