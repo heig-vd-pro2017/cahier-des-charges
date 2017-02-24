@@ -11,7 +11,8 @@ La musique a une part importante dans toute manifestation \(anniversaire, concer
 * Filtres de recherche
 * Sauvegarde des titres envoyés au serveur pour une \(re\)lecture des morceaux
 * Sauvegarder un titre ou la queue de lecture \(sur le serveur\)
-* Profils utilisateurs pour sauvegarder sur son profil un titre ou la queue de lecture
+* Création de profils utilisateur
+* Sauvegarder sur son profil un titre ou la queue de lecture
 
 ### Fonctionnalités optionnelles
 
@@ -19,6 +20,15 @@ La musique a une part importante dans toute manifestation \(anniversaire, concer
 * Possibilité de pouvoir se connecter à différents serveurs de streaming
 * Intégration de services externes \(SoundCloud, Spotify, etc.\)
 * Système de transition dynamique entre chansons selon le rythme ou le genre de la musique
+
+### Thématiques abordées
+
+* Architecture client-serveur
+* Envoi et lecture de fichiers sur un serveur
+* Gestion/archivage de fichiers
+* Gestion de profils utilisateur
+* Intégration/ajout de services externes
+* Algorithmes de détection du genre musicale
 
 
 
