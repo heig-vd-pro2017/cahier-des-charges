@@ -9,10 +9,9 @@ La musique a une part importante dans toute manifestation \(anniversaire, concer
 * Transférer et jouer de la musique sur le serveur
 * Effectuer les actions de base sur la musique \(jouer, arrêter, supprimer, changer de chanson, voir la queue de lecture\)
 * Système de vote pour changer la musique
-* Sauvegarde les titres envoyés au serveur pour une \(re\)lecture des morceaux
+* Sauvegarder les titres envoyés au serveur pour une \(re\)lecture des morceaux
 * Sauvegarder un titre ou la queue de lecture \(sur le serveur\)
-* Création de profils utilisateur
-* Sauvegarder sur son profil un titre ou la queue de lecture
+* Création de profils utilisateur permettant de sauvegarder un titre ou la queue de lecture
 
 ### Fonctionnalités optionnelles
 
@@ -29,7 +28,7 @@ La musique a une part importante dans toute manifestation \(anniversaire, concer
 * Gestion/archivage de fichiers
 * Gestion de profils utilisateur
 * Intégration/ajout de services externes
-* Algorithmes de détection du genre musicale
+* Algorithmes de détection du genre musical
 
 
 
