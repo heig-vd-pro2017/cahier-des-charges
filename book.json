@@ -1,12 +1,21 @@
 {
-    "pdf": {
-        "fontSize": 12,
-        "pageNumbers": False
-        "margin": {
-            top: "45"
-            bottom: "45"
-            right: "45"
-            left: "45"
-        }
-    }
+	"gitbook": "2.x.x",
+	"plugins": ["pdf"],
+	"links": {
+		"sidebar": {
+			"Contact us / Support": "https://www.gitbook.com/contact"
+		}
+	},
+	"pluginsConfig": {
+		"pdf": {
+			"fontSize": 12,
+			"pageNumbers": "FALSE",
+			"margin": {
+				"top": 45,
+				"bottom": 45,
+				"right": 45,
+				"left": 45
+			}
+		}
+	}
 }
