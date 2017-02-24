@@ -1,4 +1,4 @@
-## 1. Application communautaire de streaming de musique / Jukebox communautaire virtuel
+## 1. Application communautaire de streaming de musique
 
 ### Introduction
 
@@ -6,10 +6,10 @@ La musique a une part importante dans toute manifestation \(anniversaire, concer
 
 ### Fonctionnalités importantes
 
+* Transférer et jouer de la musique sur le serveur
 * Effectuer les actions de base sur la musique \(jouer, arrêter, supprimer, changer de chanson, voir la queue de lecture\)
 * Système de vote pour changer la musique
-* Filtres de recherche
-* Sauvegarde des titres envoyés au serveur pour une \(re\)lecture des morceaux
+* Sauvegarde les titres envoyés au serveur pour une \(re\)lecture des morceaux
 * Sauvegarder un titre ou la queue de lecture \(sur le serveur\)
 * Création de profils utilisateur
 * Sauvegarder sur son profil un titre ou la queue de lecture
@@ -17,6 +17,7 @@ La musique a une part importante dans toute manifestation \(anniversaire, concer
 ### Fonctionnalités optionnelles
 
 * Choix d'être le serveur ou le client
+* Filtres de recherche
 * Possibilité de pouvoir se connecter à différents serveurs de streaming
 * Intégration de services externes \(SoundCloud, Spotify, etc.\)
 * Système de transition dynamique entre chansons selon le rythme ou le genre de la musique

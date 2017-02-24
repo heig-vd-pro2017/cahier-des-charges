@@ -9,7 +9,7 @@ Tout au long de nos études, nous avons eu le plaisir de rencontrer plusieurs pr
 * Créer et gérer des classes de personnes \(étudiants et professeurs\)
 * Possibilité de créer des leçons/échéances pour toute la classe \(date de tests, d'examens, de rendu de laboratoires, etc...\)
 * Liste d'absence pour les professeurs : Le prof accorde trois minutes aux étudiants pour signaler qu'ils sont présents. Passé ce délai, le reste est noté absent.
-* Centraliser les documents de chaque cours \(cas typique : 1/4 des .pdf sur cyberlearn, une moitié sur eistore et le reste dans la nature\)
+* * Centraliser les documents de chaque cours \(cas typique : 1/4 des .pdf sur cyberlearn, une moitié sur eistore et le reste dans la nature\)
 
 ### Fonctionnalités optionnelles
 
