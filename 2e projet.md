@@ -1,4 +1,4 @@
-## 2. Application de communication professeurs-élèves
+## Application de communication professeurs-élèves
 
 ### Introduction
 

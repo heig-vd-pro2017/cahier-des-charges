@@ -1,4 +1,4 @@
-## 1. Application communautaire de streaming de musique
+## Application communautaire de streaming de musique
 
 ### Introduction
 
