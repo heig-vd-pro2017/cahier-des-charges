@@ -6,8 +6,11 @@ La musique a une part importante dans toute manifestation (anniversaire, concert
 ## Objectif
 Nous souhaitons proposer une application de type client-serveur qui permet aux différents utilisateurs de proposer leur propre musique au serveur, qui les jouera sur un système audio au fur et à mesure de l'événement.
 
+## Public cible
+
+
 ## Limitations
-Il s'agit ici de développer une application de type client-serveur multi-utilisateurs avec interface graphique qui fonctionnera au niveau du réseau local. Il ne s'agit pas de réaliser une application client-serveur qui permettra de proposer de la musique à n'importe quel serveur n'importe où dans le monde. De plus, le serveur ne pourra pas gérer un nombre illimité d'utilisateurs et lira un nombre restreint de formats.
+Il s'agit ici de développer une application de type client-serveur multi-utilisateurs avec interface graphique qui fonctionnera au niveau du réseau local. Il ne s'agit pas de réaliser une application client-serveur qui permettra de proposer de la musique à n'importe quel serveur n'importe où dans le monde. De plus, le serveur ne pourra pas gérer un nombre illimité d'utilisateurs et lira un nombre restreint de formats. L'application ne gérera pas la sécurité au niveau de la communication réseau tel que le spoofing de clients.
 
 ## Fonctionnalités importantes
 Les fonctionnalités listées ci-dessous (dans l'ordre d'importance) sont nécessaires au bon fonctionnement de l'application.
@@ -56,10 +59,10 @@ Les fonctionnalités listées ci-dessous (dans l'ordre d'importance) sont néces
     - \+ voir point "Accepter ou refuser l'ajout de nouvelles chansons"
 
 
-- Fonction: Lecture des fichiers MP3 et AAC
-  - Objectif: Le serveur supporte uniquement les fichiers MP3 et AAC
+- Fonction: Lecture des fichiers MP3 et M4A
+  - Objectif: Le serveur supporte uniquement les fichiers MP3 et M4A
   - Description: -
-  - Contraintes: Seuls les codecs sont supportés au début
+  - Contraintes: Seuls fichiers supportés au début
 
 
 - Fonction: Ajout de la musique à la base de données/système de stockage
@@ -251,13 +254,6 @@ Les fonctionnalitées listées ci-dessous ne sont pas nécessaires au bon foncti
   - Contraintes: Refuser les actions effectuées par les clients si elles ne respectent pas la configuration du serveur
 
 
-### Côté client
-- Fonction:
-  - Objectif:
-  - Description:
-  - Contraintes:
-
-
 ## Résumé du fonctionnement du programme
 0. Un serveur est lancé et est configuré selon les préférences de la personne qui gère le serveur
 0. Le serveur est démarré et les clients peuvent s'y connecter
@@ -273,18 +269,17 @@ Les fonctionnalitées listées ci-dessous ne sont pas nécessaires au bon foncti
 
 ## Spécifications techniques
 L'application sera réalisée à l'aide des technologies suivantes:
-- [Java](java.com): pour la réalisation du programme
-- [JavaFX](docs.oracle.com/javafx): pour la réalisation de l'interface graphique
-- [SQLite](sqlite.org): pour la réalisation de la base de données
-- [JSON](json.org): pour l'interaction entre le client et le serveur
+- Java (java.com): pour la réalisation du programme
+- JavaFX (docs.oracle.com/javafx): pour la réalisation de l'interface graphique
+- SQLite (sqlite.org): pour la réalisation de la base de données
+- JSON (json.org): pour l'interaction entre le client et le serveur
 - \+ différentes librairies qui pourraient être découvertes durant la conception du programme
 
 Et s'appuiera sur les outils suivants pour sa réalisation:
-- [Git](git-scm.com) / [GitHub](github.com): pour la gestion de versions du projet
-- [Travis](travis-ci.org): pour les tests unitaires afin de s'assurer du bon fonctionnement de l'application
-- [PlantUML](plantuml.com): pour la génération des différents schémas (diagrammes de classes, diagrammes de séquences, diagrammes pour le schéma relationnel, etc.)
-- [Pencil](pencil.evolus.vn): pour la création de mockups et interfaces simplifiées
-- [GanttProject](ganttproject.biz): pour la création du diagramme de Gantt et la répartition des tâches
+- Git (git-scm.com) / GitHub (github.com): pour la gestion de versions du projet
+- Travis (travis-ci.org): pour les tests unitaires afin de s'assurer du bon fonctionnement de l'application
+- PlantUML (plantuml.com): pour la génération des différents schémas (diagrammes de classes, diagrammes de séquences, diagrammes pour le schéma relationnel, etc.)
+- Pencil (pencil.evolus.vn): pour la création de mockups et interfaces simplifiées
 - \+ différents outils qui pourraient être découverts durant la conception du programme
 
 ## Ressources à disposition et organisation
@@ -299,6 +294,12 @@ En plus des points évoqués dans les contraintes du cours PRO et selon les fonc
 
 ## Indicateurs et évaluation des résultats
 Les différentes itérations de la méthodologie AGILE permettront de quantifier l'avancement du travail et sa bonne réalisation.
+
+## Risques
+- envoi de fichiers
+- interface
+- lecture de fichiers
+
 
 ## Annexes
 - Planification
