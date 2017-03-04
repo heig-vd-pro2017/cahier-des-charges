@@ -273,18 +273,18 @@ Les fonctionnalitées listées ci-dessous ne sont pas nécessaires au bon foncti
 
 ## Spécifications techniques
 L'application sera réalisée à l'aide des technologies suivantes:
-- Java (java.com): pour la réalisation du programme
-- JavaFX (docs.oracle.com/javafx): pour la réalisation de l'interface graphique
-- SQLite (sqlite.org): pour la réalisation de la base de données
-- JSON (json.org): pour l'interaction entre le client et le serveur
+- [Java](java.com): pour la réalisation du programme
+- [JavaFX](docs.oracle.com/javafx): pour la réalisation de l'interface graphique
+- [SQLite](sqlite.org): pour la réalisation de la base de données
+- [JSON](json.org): pour l'interaction entre le client et le serveur
 - \+ différentes librairies qui pourraient être découvertes durant la conception du programme
 
 Et s'appuiera sur les outils suivants pour sa réalisation:
-- Git (git-scm.com) / GitHub (github.com): pour la gestion de versions du projet
-- Travis (travis-ci.org): pour les tests unitaires afin de s'assurer du bon fonctionnement de l'application
-- PlantUML (plantuml.com): pour la génération des différents schémas (diagrammes de classes, diagrammes de séquences, diagrammes pour le schéma relationnel, etc.)
-- Pencil (pencil.evolus.vn): pour la création de mockups et interfaces simplifiées
-- GanttProject (ganttproject.biz): pour la création du diagramme de Gantt et la répartition des tâches
+- [Git](git-scm.com) / [GitHub](github.com): pour la gestion de versions du projet
+- [Travis](travis-ci.org): pour les tests unitaires afin de s'assurer du bon fonctionnement de l'application
+- [PlantUML](plantuml.com): pour la génération des différents schémas (diagrammes de classes, diagrammes de séquences, diagrammes pour le schéma relationnel, etc.)
+- [Pencil](pencil.evolus.vn): pour la création de mockups et interfaces simplifiées
+- [GanttProject](ganttproject.biz): pour la création du diagramme de Gantt et la répartition des tâches
 - \+ différents outils qui pourraient être découverts durant la conception du programme
 
 ## Ressources à disposition et organisation
