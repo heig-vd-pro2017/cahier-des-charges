@@ -1,0 +1,53 @@
+@startuml
+
+start
+
+:Lancement du logiciel;
+
+if(Serveur ?) is (oui) then
+
+partition Serveur {
+    :Paramétrage du serveur;
+    :Autoriser les clients\nà se connecter;
+    fork
+        repeat
+            :Attente de connexion;
+            :Création d'un thread;
+            :Attente de la réception\nd'une musique;
+            if(Déjà présente dans le\nsystème de stockage ?) is (oui) then
+                :Récupération de\nla musique;
+            else (non)
+                :Attente fin réception;
+                :Stockage dans\nle système;
+            endif
+            :Mise en place dans la playlist;
+        repeat while(Connexion coupée ?) is (non)
+
+    fork again
+        repeat
+            :Lecture playlist;
+            :Modification de la playlist\nen fonction des upvotes;
+        repeat while(Connexion coupée ?) is (non)
+    end fork
+
+    -[dashed]->
+    :Vider le système de stockage ?}
+}
+
+else (non)
+
+partition Client {
+    :Recherche d'un serveur;
+    :Connexion au serveur;
+    repeat
+        :Récupération de la playlist\nen cours de lecture;
+        -[dashed]->
+        :Envoi d'une musique}
+    repeat while (Connexion coupée ?) is (non)
+}
+
+endif
+
+end
+
+@enduml
