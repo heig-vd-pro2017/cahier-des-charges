@@ -33,7 +33,7 @@ Les fonctionnalités listées ci-dessous (dans l'ordre d'importance) sont néces
     - Les résultats de toutes les actions effectuées par les utilisateurs doivent être notifiées
     - Les erreurs ou les limitations doivent être notifiées
   - Contraintes: -
--
+
 
 ### Côté serveur
 - Fonction: Paramétrages basiques du serveur
@@ -248,7 +248,7 @@ Les fonctionnalitées listées ci-dessous ne sont pas nécessaires au bon foncti
   - Objectif: Autoriser certains utilisateurs à avoir plus de droits que les autres
   - Description: Leur permettre de mettre la musique sur pause et régler
   - Contraintes: -
-  
+
 
 ### Côté serveur
 - Fonction: Configuration avancée du serveur
