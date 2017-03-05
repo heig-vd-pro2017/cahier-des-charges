@@ -10,10 +10,10 @@ Nous souhaitons proposer une application de type client-serveur qui permet aux d
 
 
 ## Limitations
-Il s'agit ici de développer une application de type client-serveur multi-utilisateurs avec interface graphique qui fonctionnera au niveau du réseau local. Il ne s'agit pas de réaliser une application client-serveur qui permettra de proposer de la musique à n'importe quel serveur n'importe où dans le monde. De plus, le serveur ne pourra pas gérer un nombre illimité d'utilisateurs et lira un nombre restreint de formats. L'application ne gérera pas la sécurité au niveau de la communication réseau tel que le spoofing de clients.
+Il s'agit ici de développer une application de type client-serveur multi-utilisateur avec interface graphique qui fonctionnera au niveau du réseau local. Il ne s'agit pas de réaliser une application client-serveur qui permettra de proposer de la musique à n'importe quel serveur n'importe où dans le monde. De plus, le serveur ne pourra pas gérer un nombre illimité d'utilisateurs et lira un nombre restreint de formats. L'application ne gérera pas la sécurité au niveau de la communication réseau tel que le spoofing de clients.
 
 ## Fonctionnalités importantes
-Les fonctionnalités listées ci-dessous (dans l'ordre d'importance) sont nécessaires au bon fonctionnement de l'application.
+Les fonctionnalités listées ci-dessous, dans l'ordre d'importance, sont nécessaires au bon fonctionnement de l'application.
 
 ### Commun aux deux parties de l'application
 - Fonction: Démarrage et arrêt corrects du programme
@@ -30,7 +30,7 @@ Les fonctionnalités listées ci-dessous (dans l'ordre d'importance) sont néces
   - Contraintes: -
 
 
-- Fonction: Notifications des actions
+- Fonction: Notification des actions
   - Objectif: Ne pas laisser les utilisateurs dans le doute de la bonne réalisation ou non des actions qu'ils effectuent
   - Description:
     - Les résultats de toutes les actions effectuées par les utilisateurs doivent être notifiées
@@ -90,7 +90,7 @@ Les fonctionnalités listées ci-dessous (dans l'ordre d'importance) sont néces
     - Ajout de chansons locales à l'application
     - Récupération des metadatas des chansons et mise en liste de lecture
     - Voir les chansons en cours de lecture (queue de lecture)
-  - Contraintes: La fenêtre ne peut pas se redimensionner
+  - Contraintes: La fenêtre ne peut pas être redimensionnée
 
 
 - Fonction: Contrôle du volume de la musique
@@ -124,7 +124,7 @@ Les fonctionnalités listées ci-dessous (dans l'ordre d'importance) sont néces
   - Objectif: Permettre au client de sauvegarder les metadatas des chansons qui lui plaisent dans la base de données locale de ce dernier
   - Description:
     - Une playlist par défaut est créée automatiquement lors de la configuration du serveur et toutes les chansons y sont enregistrées.
-    - Si un client souhaite enregistrer une chanson, le serveur lui envoie les metadatas de cette chanson et ses dernières sont enregistrées les favoris ou dans une playlist du client. Possibilité de sauvegarder les éléments suivants:
+    - Si un client souhaite enregistrer une chanson, le serveur lui envoie les metadatas de cette chanson et ces dernières sont enregistrées dans les favoris ou dans une playlist du client. Possibilité de sauvegarder les éléments suivants:
       - toute la musique qui a été jouée durant l'événement
       - toute la musique qui a été jouée depuis que le client s'est connecté pour la première fois à l'événement
       - des chansons indépendantes
@@ -132,8 +132,8 @@ Les fonctionnalités listées ci-dessous (dans l'ordre d'importance) sont néces
 
 
 - Fonction: Nettoyage de la base de données
-    - Objectif: Faire de la place sur le serveur
-    - Description: Permet de supprimer la musique qui correspond aux critères suivants (à choix):
+    - Objectif: Libérer de la place sur le serveur
+    - Description: Permet de supprimer la musique qui correspond aux critères suivants, à choix :
       - n'existe plus sur le disque
       - n'a pas été lue durant l'événement
       - n'a pas été lue depuis une certaine date
@@ -149,7 +149,7 @@ Les fonctionnalités listées ci-dessous (dans l'ordre d'importance) sont néces
 
 - Fonction: Accéder au serveur
   - Objectif: Accéder aux fonctionnalités du serveur
-  - Description: Voir la liste de lecture, voter pour changer de musique/réorganiser la queue de lecture
+  - Description: Voir la liste de lecture, voter pour changer de chanson ou réorganiser la queue de lecture
   - Contraintes: Les fonctionnalités sont limitées selon la configuration du serveur
 
 
@@ -172,20 +172,20 @@ Les fonctionnalités listées ci-dessous (dans l'ordre d'importance) sont néces
 
 - Fonction: Système de vote
   - Objectif: Changer de musique, agencer la queue de lecture
-  - Description: Donne la possibilité aux utilisateurs de changer/arranger la musique en fonction des goûts
+  - Description: Donne la possibilité aux utilisateurs de changer ou arranger la musique en fonction des goûts
   - Contraintes: Un client qui vote deux fois pour la même action voit sa deuxième action refusée
 
 
 - Fonction: Système de favoris/playlist
   - Objectif: Sauvegarder les chansons pour les retrouver après l'événement
-  - Description: Sauve la musique (la queue de lecture) dans la base de données locale (identique à la base de données du serveur, sans le chemin d'accès du fichier) du client selon qu'il souhaite récupérer toute la musique jouée pendant la soirée uniquement dès qu'il s'est connecté pour la première fois ou qu'il souhaite récupérer des chansons indépendantes avec possibilité de créer des playlists
+  - Description: Sauve la queue de lecture dans la base de données locale - identique à la base de données du serveur, sans le chemin d'accès du fichier - du client selon qu'il souhaite récupérer toute la musique jouée pendant la soirée uniquement dès qu'il s'est connecté pour la première fois ou qu'il souhaite récupérer des chansons indépendantes avec possibilité de créer des playlists
   - Contraintes:
     - Un client ne peut pas enregistrer deux fois la même chanson durant le même événement
-    - Un client doit pouvoir supprimer une chanson de ses favoris/playlists
-    - Un client doit pouvoir supprimer une playlist avec toutes les chansons contenues dans cette playlist
+    - Un client doit pouvoir supprimer une chanson de ses favoris ou ses playlists
+    - Un client doit pouvoir supprimer une playlist avec toutes les chansons contenues dans ladite playlist
 
 ## Fonctionnalités optionnelles
-Les fonctionnalitées listées ci-dessous ne sont pas nécessaires au bon fonctionnement de l'application mais pourront être réalisées si le temps le permet. Ces dernières ne sont pas dans un ordre précis.
+Les fonctionnalités listées ci-dessous ne sont pas nécessaires au bon fonctionnement de l'application mais pourront être réalisées si le temps le permet. Ces dernières ne sont pas dans un ordre précis.
 
 ### Commun aux deux parties de l'application
 - Fonction: Support d'autres formats de musique
@@ -203,7 +203,7 @@ Les fonctionnalitées listées ci-dessous ne sont pas nécessaires au bon foncti
 - Fonction: Fusionner le code de l'application serveur et client
   - Objectif: Permet à n'importe quel client de devenir serveur et inversément
   - Description: -
-  - Contraintes: Les deux interfaces graphiques se voudront très similaires, sans les possibilités de modification des paramètres du serveur de la part des clients.
+  - Contraintes: Les deux interfaces graphiques se voudront très similaires, sans possibilité de modification des paramètres du serveur de la part des clients
 
 
 - Fonction: Filtres de recherche
@@ -213,13 +213,13 @@ Les fonctionnalitées listées ci-dessous ne sont pas nécessaires au bon foncti
 
 
 - Fonction: Intégration de services externes
-  - Objectif: Permettre la lecture de chansons issues de services externes (SoundCloud, Youtube, etc.)
+  - Objectif: Permettre la lecture de chansons issues de services externes (SoundCloud, YouTube, etc.)
   - Description: -
   - Contraintes: La sauvegarde de la session de l'utilisateur est encore à définir
 
 
 - Fonction: Système de transition dynamique entre chansons
-  - Objectif: Transition fluide entre les musiques et les genres
+  - Objectif: Transition fluide entre les chansons et les genres
   - Description: Système de transition dynamique entre chansons selon le rythme ou le genre de la musique
   - Contraintes: -
 
@@ -246,10 +246,10 @@ Les fonctionnalitées listées ci-dessous ne sont pas nécessaires au bon foncti
 - Fonction: Configuration avancée du serveur
   - Objectif: Options poussées pour la configuration du serveur
   - Description:
-    - Lecture séquentielle: les chansons sont lues les unes après les autres (en ne tenant pas compte des votes - premier arrivé, premier servi)
-    - Lecture démocratique: les chansons sont lues en fonction des préférences des utilisateurs (grâce au système de vote)
-    - Lecture aléatoire: les chansons sont lues aléatoirement, quels que soient les votes
-    - Lecture hybride: alternation entre les chansons populaires (beaucoup de votes) et moins populaires (moins ou pas de votes)
+    - Lecture séquentielle: les chansons sont lues les unes après les autres, en ne tenant pas compte des votes : premier arrivé, premier servi
+    - Lecture démocratique: les chansons sont lues en fonction des préférences des utilisateurs grâce au système de vote
+    - Lecture aléatoire: les chansons sont lues aléatoirement quels que soient les votes
+    - Lecture hybride: alternation entre les chansons populaires, qui ont beaucoup de votes, et moins populaires, qui ont moins ou pas de votes
     - Chemin de stockage de la musique: où est enregistrée la musique
   - Contraintes: Refuser les actions effectuées par les clients si elles ne respectent pas la configuration du serveur
 
@@ -261,7 +261,7 @@ Les fonctionnalitées listées ci-dessous ne sont pas nécessaires au bon foncti
 0. Le client se connecte sur un serveur
 0. Une fois connecté, il peut effectuer les fonctionnalités paramétrées sur le serveur:
   - Proposer de nouvelles chansons
-  - Voter pour changer/organiser la playlist
+  - Voter pour changer ou organiser la playlist
   - Enregistrer en favoris des chansons ou la liste de lecture
 0. Le serveur enregistre la chanson en local et la lit au fur et à mesure de l'événement, en fonction des éventuelles préférences des utilisateurs
 0. Une fois l'événement terminé, la musique est conservée sur le serveur jusqu'à ce que l'administrateur décide de nettoyer la base de données ou que la capacité maximum de stockage soit atteinte
@@ -284,7 +284,7 @@ Et s'appuiera sur les outils suivants pour sa réalisation:
 
 ## Ressources à disposition et organisation
 Le projet se déroulera sur tout le semestre pour un total de 90 heures de travail par personne, soit 540 heures de travail effectif sur 14 semaines. Cela représente environ six heures de travail par personne par semaine.
-Une métodoologie AGILE sera appliquée afin d'avoir un suivi de l'évolution du travail.
+Une métodologie AGILE sera appliquée afin d'avoir un suivi de l'évolution du travail.
 
 ## Rendu
 En plus des points évoqués dans les contraintes du cours PRO et selon les fonctionnalités importantes, le rendu sera de la forme suivante:
