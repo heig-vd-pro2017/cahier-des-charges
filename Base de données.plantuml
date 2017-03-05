@@ -1,0 +1,20 @@
+@startuml
+
+object Musique
+Musique : Artiste
+Musique : Titre
+Musique : Album
+Musique : Durée
+Musique : Chemin du fichier
+Musique : Date d'ajout
+Musique : Date de lecture
+
+object Playlist
+Playlist : Nom
+Playlist : Date de création
+
+note "Cette base de données\nest identique aux deux\nprogrammes client et\nserveur" as N1
+
+Musique *--* Playlist
+
+@enduml
