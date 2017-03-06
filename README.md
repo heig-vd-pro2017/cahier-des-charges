@@ -271,13 +271,25 @@ Les fonctionnalités listées ci-dessous ne sont pas nécessaires au bon fonctio
 0. Le client conserve une copie des metadatas des chansons qui lui ont plu dans sa base de données locale et peut, de ce fait, retrouver les morcaux qui lui ont plu lors de cet événement
 
 ### Schéma préliminaire de la base de données
-<center>![database-diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/heig-vd-pro2017/cahier-des-charges/master/Database.plantuml)</center>
+<center>
+
+![database-diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/heig-vd-pro2017/cahier-des-charges/master/Database.plantuml)
+
+</center>
 
 ### Schéma préliminaire du schéma d'activité
-<center>![activity-diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/heig-vd-pro2017/cahier-des-charges/master/Activity.plantuml)</center>
+<center>
+
+![activity-diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/heig-vd-pro2017/cahier-des-charges/master/Activity.plantuml)
+
+</center>
 
 ### Schéma préliminaire du fonctionnement général
-<center>![overview-diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/heig-vd-pro2017/cahier-des-charges/master/Overview.plantuml)</center>
+<center>
+
+![overview-diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/heig-vd-pro2017/cahier-des-charges/master/Overview.plantuml)
+
+</center>
 
 ## Spécifications techniques
 L'application sera réalisée à l'aide des technologies suivantes:
