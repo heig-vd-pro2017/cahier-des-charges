@@ -4,7 +4,8 @@
 La musique a une part importante dans toute manifestation (anniversaire, concert, bar, soirée entre amis, etc.). Néanmoins, la musique est souvent gérée par une personne sur un appareil et il devient difficile pour une autre personne de changer la musique ou proposer la sienne.
 
 ## Objectif
-Nous souhaitons proposer une application de type client-serveur qui permet aux différents utilisateurs de proposer leur propre musique au serveur, qui les jouera sur un système audio au fur et à mesure de l'événement.
+Nous souhaitons proposer une application de type client-serveur qui permet aux différents utilisateurs de proposer leur propre musique au serveur, qui les jouera sur un système audio au fur et à mesure de l'événement. Elle laissera aussi les utilisateurs gérer la file de lecture grâce à un
+système de votes.
 
 ## Public cible
 Notre application est adressée à des utilisateurs néophytes, de toutes générations. De ce fait, son utilisation doit être simple mais proposera des options qui raviront les utilisateurs souhaitant plus de contrôle sur le fonctionnement de l'application.
@@ -295,6 +296,7 @@ En plus des points évoqués dans les contraintes du cours PRO et selon les fonc
 
 ## Indicateurs et évaluation des résultats
 Les différentes itérations de la méthodologie AGILE permettront de quantifier l'avancement du travail et sa bonne réalisation.
+
 
 ## Difficultés envisagées
 Les éléments suivants semblent être ceux qui devront prendre plus de temps pour leur réalisation au vu de leur complexité:
