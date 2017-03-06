@@ -1,4 +1,5 @@
-# Cahier des charges
+# HEIG-VD - PRO 2017 - Cahier des charges
+David Truan, Denise Gemesio, Lucas Elisei, Ludovic Delafontaine, Thibault Togue Kamga & Yosra Harbaoui
 
 ## Contexte et problématique
 La musique a une part importante dans toute manifestation (anniversaire, concert, bar, soirée entre amis, etc.). Néanmoins, la musique est souvent gérée par une personne sur un appareil et il devient difficile pour une autre personne de changer la musique ou proposer la sienne.
