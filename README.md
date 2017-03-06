@@ -7,7 +7,7 @@ La musique a une part importante dans toute manifestation (anniversaire, concert
 Nous souhaitons proposer une application de type client-serveur qui permet aux différents utilisateurs de proposer leur propre musique au serveur, qui les jouera sur un système audio au fur et à mesure de l'événement.
 
 ## Public cible
-
+Notre application est adressée à des utilisateurs néophytes, de toutes générations. De ce fait, son utilisation doit être simple mais proposera des options qui raviront les utilisateurs souhaitant plus de contrôle sur le fonctionnement de l'application.
 
 ## Limitations
 Il s'agit ici de développer une application de type client-serveur multi-utilisateurs avec interface graphique qui fonctionnera au niveau du réseau local. Il ne s'agit pas de réaliser une application client-serveur qui permettra de proposer de la musique à n'importe quel serveur n'importe où dans le monde. De plus, le serveur ne pourra pas gérer un nombre illimité d'utilisateurs et lira un nombre restreint de formats. L'application ne gérera pas la sécurité au niveau de la communication réseau tel que le spoofing de clients.
@@ -295,11 +295,11 @@ En plus des points évoqués dans les contraintes du cours PRO et selon les fonc
 ## Indicateurs et évaluation des résultats
 Les différentes itérations de la méthodologie AGILE permettront de quantifier l'avancement du travail et sa bonne réalisation.
 
-## Risques
-- envoi de fichiers
-- interface
-- lecture de fichiers
-
+## Difficultés envisagées
+Les éléments suivants semblent être ceux qui devront prendre plus de temps pour leur réalisation au vu de leur complexité:
+- Envoi et gestion de fichiers
+- Interface graphique
+- Lecture de fichiers musicaux
 
 ## Annexes
 - Planification
