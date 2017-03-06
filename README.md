@@ -270,19 +270,28 @@ Les fonctionnalités listées ci-dessous ne sont pas nécessaires au bon fonctio
 0. Une fois l'événement terminé, la musique est conservée sur le serveur jusqu'à ce que l'administrateur décide de nettoyer la base de données ou que la capacité maximum de stockage soit atteinte
 0. Le client conserve une copie des metadatas des chansons qui lui ont plu dans sa base de données locale et peut, de ce fait, retrouver les morcaux qui lui ont plu lors de cet événement
 
+### Schéma préliminaire de la base de données
+<center>![database-diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/heig-vd-pro2017/cahier-des-charges/master/Database.plantuml)</center>
+
+### Schéma préliminaire du schéma d'activité
+<center>![activity-diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/heig-vd-pro2017/cahier-des-charges/master/Activity.plantuml)</center>
+
+### Schéma préliminaire du fonctionnement général
+<center>![overview-diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/heig-vd-pro2017/cahier-des-charges/master/Overview.plantuml)</center>
+
 ## Spécifications techniques
 L'application sera réalisée à l'aide des technologies suivantes:
-- Java (java.com): pour la réalisation du programme
-- JavaFX (docs.oracle.com/javafx): pour la réalisation de l'interface graphique
-- SQLite (sqlite.org): pour la réalisation de la base de données
-- JSON (json.org): pour l'interaction entre le client et le serveur
+- Java ([java.com](java.com)): pour la réalisation du programme
+- JavaFX ([docs.oracle.com/javafx](docs.oracle.com/javafx)): pour la réalisation de l'interface graphique
+- SQLite ([sqlite.org](sqlite.org)): pour la réalisation de la base de données
+- JSON ([json.org](json.org)): pour l'interaction entre le client et le serveur
 - \+ différentes librairies qui pourraient être découvertes durant la conception du programme
 
 Et s'appuiera sur les outils suivants pour sa réalisation:
-- Git (git-scm.com) / GitHub (github.com): pour la gestion de versions du projet
-- Travis (travis-ci.org): pour les tests unitaires afin de s'assurer du bon fonctionnement de l'application
-- PlantUML (plantuml.com): pour la génération des différents schémas (diagrammes de classes, diagrammes de séquences, diagrammes pour le schéma relationnel, etc.)
-- Pencil (pencil.evolus.vn): pour la création de mockups et interfaces simplifiées
+- Git ([git-scm.com](git-scm.com)) / GitHub ([github.com](github.com)): pour la gestion de versions du projet
+- Travis ([travis-ci.org](travis-ci.org)): pour les tests unitaires afin de s'assurer du bon fonctionnement de l'application
+- PlantUML ([plantuml.com](plantuml.com)): pour la génération des différents schémas (diagrammes de classes, diagrammes de séquences, diagrammes pour le schéma relationnel, etc.)
+- Pencil ([pencil.evolus.vn](plantuml.com)): pour la création de mockups et interfaces simplifiées
 - \+ différents outils qui pourraient être découverts durant la conception du programme
 
 Et s'exécutera sur les systèmes d'exploitation suivants:
@@ -313,5 +322,3 @@ Les éléments suivants semblent être ceux qui devront prendre plus de temps po
 ## Annexes
 - Planification
 - Mockups de l'application
-- Schéma préliminaire de la base de données
-- Schéma préliminaire du schéma d'activité
