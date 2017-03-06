@@ -4,10 +4,12 @@
 La musique a une part importante dans toute manifestation (anniversaire, concert, bar, soirée entre amis, etc.). Néanmoins, la musique est souvent gérée par une personne sur un appareil et il devient difficile pour une autre personne de changer la musique ou proposer la sienne.
 
 ## Objectif
-Nous souhaitons proposer une application de type client-serveur qui permet aux différents utilisateurs de proposer leur propre musique au serveur, qui les jouera sur un système audio au fur et à mesure de l'événement.
+Nous souhaitons proposer une application de type client-serveur qui permet aux différents utilisateurs de proposer leur propre musique au serveur, qui les jouera sur un système audio au fur et à mesure de l'événement. Elle laissera aussi les utilisateurs gérer la file de lecture grâce à un
+système de votes.
 
 ## Public cible
-
+Notre application est destinée à un puclic néophyte. Elle sera donc simple à utiliser et
+ne demandera pas de connaissances spécifiques en informatique.
 
 ## Limitations
 Il s'agit ici de développer une application de type client-serveur multi-utilisateur avec interface graphique qui fonctionnera au niveau du réseau local. Il ne s'agit pas de réaliser une application client-serveur qui permettra de proposer de la musique à n'importe quel serveur n'importe où dans le monde. De plus, le serveur ne pourra pas gérer un nombre illimité d'utilisateurs et lira un nombre restreint de formats. L'application ne gérera pas la sécurité au niveau de la communication réseau tel que le spoofing de clients.
@@ -295,10 +297,11 @@ En plus des points évoqués dans les contraintes du cours PRO et selon les fonc
 ## Indicateurs et évaluation des résultats
 Les différentes itérations de la méthodologie AGILE permettront de quantifier l'avancement du travail et sa bonne réalisation.
 
-## Risques
-- envoi de fichiers
-- interface
-- lecture de fichiers
+## Eventuelles difficultés de développement
+- Envoi de fichiers
+- Interface graphique
+- Lecture de fichiers
+- Sécurité
 
 
 ## Annexes
