@@ -80,7 +80,7 @@ Les fonctionnalités listées ci-dessous, dans l'ordre d'importance, sont néces
 
 - Fonction: Actions de base sur la musique
   - Objectif: Effectuer des actions sur la lecture de la musique
-  - Description: Passer à la chanson suivante, mettre sur pause, arrêter
+  - Description: Passer à la chanson suivante, remettre une des chansons précédentes, mettre sur pause, arrêter
   - Contraintes: -
 
 
@@ -251,6 +251,7 @@ Les fonctionnalités listées ci-dessous ne sont pas nécessaires au bon fonctio
     - Lecture aléatoire: les chansons sont lues aléatoirement quels que soient les votes
     - Lecture hybride: alternation entre les chansons populaires, qui ont beaucoup de votes, et moins populaires, qui ont moins ou pas de votes
     - Chemin de stockage de la musique: où est enregistrée la musique
+    - Une musique ne peut être relue que après un certain nombre de minutes après sa première lecture
   - Contraintes: Refuser les actions effectuées par les clients si elles ne respectent pas la configuration du serveur
 
 
