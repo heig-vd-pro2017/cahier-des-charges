@@ -14,24 +14,22 @@ partition Serveur {
             :Attente de connexion;
             :Création d'un thread;
             :Attente de la réception\nd'une musique;
-            if(Déjà présente dans le\nsystème de stockage ?) is (oui) then
+            :Demande d'ajout\nd'une musique;
+            if(Déjà présente dans\nla base de données ?) is (oui) then
                 :Récupération de\nla musique;
             else (non)
                 :Attente fin réception;
                 :Stockage dans\nle système;
             endif
             :Mise en place dans la playlist;
-        repeat while(Connexion coupée ?) is (non)
+        repeat while(Serveur arrêté ?) is (non)
 
     fork again
         repeat
             :Lecture playlist;
             :Modification de la playlist\nen fonction des upvotes;
-        repeat while(Connexion coupée ?) is (non)
+        repeat while(Serveur arrêté ?) is (non)
     end fork
-
-    -[dashed]->
-    :Vider le système de stockage ?}
 }
 
 else (non)
@@ -42,11 +40,15 @@ partition Client {
     repeat
         :Récupération de la playlist\nen cours de lecture;
         -[dashed]->
-        :Envoi d'une musique}
+        :Envoi d'une musique\nAction sur la musique}
     repeat while (Connexion coupée ?) is (non)
 }
 
 endif
+
+
+-[dashed]->
+:Nettoyer les ressources:\nNettoyer la base de données\nNettoyer lesystème de stockage\nLibérer les ressources}
 
 end
 

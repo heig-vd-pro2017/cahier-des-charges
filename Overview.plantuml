@@ -1,0 +1,26 @@
+@startuml
+
+actor Serveur
+actor Client1
+actor Client2
+actor ClientN
+
+database Database
+database DB_C1
+database DB_C2
+database DB_CN
+
+storage Stockage
+
+Stockage - Serveur
+Serveur - Database
+
+Client1 <--> DB_C1
+Client2 <--> DB_C2
+ClientN <--> DB_CN
+
+Serveur <--> Client1
+Serveur <--> Client2
+Serveur <--> ClientN
+
+@enduml
