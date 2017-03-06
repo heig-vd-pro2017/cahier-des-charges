@@ -12,7 +12,7 @@ système de votes.
 Notre application est adressée à des utilisateurs néophytes, de toutes générations. De ce fait, son utilisation doit être simple mais proposera des options qui raviront les utilisateurs souhaitant plus de contrôle sur le fonctionnement de l'application.
 
 ## Limitations
-Il s'agit ici de développer une application de type client-serveur multi-utilisateur avec interface graphique qui fonctionnera au niveau du réseau local. Il ne s'agit pas de réaliser une application client-serveur qui permettra de proposer de la musique à n'importe quel serveur n'importe où dans le monde. De plus, le serveur ne pourra pas gérer un nombre illimité d'utilisateurs et lira un nombre restreint de formats. L'application ne gérera pas la sécurité au niveau de la communication réseau tel que le spoofing de clients.
+Il s'agit ici de développer une application de type client-serveur multi-utilisateur avec interface graphique qui fonctionnera au niveau du réseau local. Il ne s'agit pas de réaliser une application client-serveur qui permettra de proposer de la musique à n'importe quel serveur n'importe où dans le monde. De plus, le serveur ne pourra pas gérer un nombre illimité d'utilisateurs et lira un nombre restreint de formats. L'application ne gérera pas la sécurité au niveau de la communication réseau tel que le spoofing de clients. Finalement, l'application devra tourner sur Windows 10.
 
 ## Fonctionnalités importantes
 Les fonctionnalités listées ci-dessous, dans l'ordre d'importance, sont nécessaires au bon fonctionnement de l'application.
@@ -284,6 +284,11 @@ Et s'appuiera sur les outils suivants pour sa réalisation:
 - PlantUML (plantuml.com): pour la génération des différents schémas (diagrammes de classes, diagrammes de séquences, diagrammes pour le schéma relationnel, etc.)
 - Pencil (pencil.evolus.vn): pour la création de mockups et interfaces simplifiées
 - \+ différents outils qui pourraient être découverts durant la conception du programme
+
+Et s'exécutera sur les systèmes d'exploitation suivants:
+- Windows (la version 10 au mimimum)
+- Linux
+- Mac OS
 
 ## Ressources à disposition et organisation
 Le projet se déroulera sur tout le semestre pour un total de 90 heures de travail par personne, soit 540 heures de travail effectif sur 14 semaines. Cela représente environ six heures de travail par personne par semaine.
