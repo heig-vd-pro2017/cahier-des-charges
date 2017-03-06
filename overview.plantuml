@@ -1,17 +1,18 @@
 @startuml
 
-database DB_locale
 actor serveur
+database DB_locale
 storage stockage_local
+
 actor client1
 actor client2
-
-client1 <--> serveur
-client2 <--> serveur
 
 DB_locale - serveur
 serveur - stockage_local
 
 client1 <..> DB_locale
+
+serveur <--> client1
+serveur <--> client2
 
 @enduml
