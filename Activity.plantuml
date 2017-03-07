@@ -48,7 +48,7 @@ endif
 
 
 -[dashed]->
-:Nettoyer les ressources:\nNettoyer la base de données\nNettoyer lesystème de stockage\nLibérer les ressources}
+:Nettoyer la base de données\nNettoyer le système de stockage\nLibérer les ressources}
 
 end
 
