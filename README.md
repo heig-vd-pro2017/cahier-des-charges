@@ -1,22 +1,29 @@
-# HEIG-VD - PRO 2017 - Cahier des charges
+**HEIG-VD - PRO 2017 - Cahier des charges**
+
 David Truan, Denise Gemesio, Lucas Elisei, Ludovic Delafontaine, Thibaut Togue Kamga & Yosra Harbaoui
 
-## Contexte et problématique
+\tableofcontents
+
+\listoffigures
+
+\pagebreak
+
+# Contexte et problématique
 La musique a une part importante dans toute manifestation (anniversaire, concert, bar, soirée entre amis, etc.). Néanmoins, la musique est souvent gérée par une personne sur un appareil et il devient difficile pour une autre personne de changer la musique ou proposer la sienne.
 
-## Objectif
+# Objectif
 Nous souhaitons proposer une application de type client-serveur qui permet aux différents utilisateurs de proposer leur propre musique au serveur, qui les jouera sur un système audio au fur et à mesure de l'événement. Elle laissera aussi les utilisateurs gérer la file de lecture grâce à un système de votes.
 
-## Public cible
+# Public cible
 Notre application est adressée à des utilisateurs néophytes, de toutes générations. De ce fait, son utilisation doit être simple mais proposera des options qui raviront les utilisateurs souhaitant plus de contrôle sur le fonctionnement de l'application.
 
-## Limitations
+# Limitations
 Il s'agit ici de développer une application de type client-serveur multi-utilisateur avec interface graphique qui fonctionnera au niveau du réseau local. Il ne s'agit pas de réaliser une application client-serveur qui permettra de proposer de la musique à n'importe quel serveur n'importe où dans le monde. De plus, le serveur ne pourra pas gérer un nombre illimité d'utilisateurs et lira un nombre restreint de formats. L'application ne gérera pas la sécurité au niveau de la communication réseau tel que le spoofing de clients.
 
-## Fonctionnalités importantes
+# Fonctionnalités importantes
 Les fonctionnalités listées ci-dessous, dans l'ordre d'importance, sont nécessaires au bon fonctionnement de l'application.
 
-### Commun aux deux parties de l'application
+## Commun aux deux parties de l'application
 - **Fonction:** Démarrage et arrêt corrects du programme
     - Objectif: Préparer les ressources et les nettoyer correctement
     - Description: -
@@ -39,7 +46,7 @@ Les fonctionnalités listées ci-dessous, dans l'ordre d'importance, sont néces
     - Contraintes: -
 
 
-### Côté serveur
+## Côté serveur
 - **Fonction:** Paramétrages basiques du serveur
     - Objectif: Donner un nom au serveur
     - Description: Donner la possibilité aux clients de savoir sur quel serveur ils vont se connecter.
@@ -141,7 +148,7 @@ Les fonctionnalités listées ci-dessous, dans l'ordre d'importance, sont néces
     - Contraintes: Nettoyage automatique si la capacité de stockage est limitée
 
 
-### Côté client
+## Côté client
 - **Fonction:** Voir la liste des serveurs accessibles
     - Objectif: Permet de choisir sur quel serveur se connecter
     - Description: Lorsque l'application est lancée, le client voit les serveurs accessibles par leur nom et peut s'y connecter
@@ -185,10 +192,10 @@ Les fonctionnalités listées ci-dessous, dans l'ordre d'importance, sont néces
         - Un client doit pouvoir supprimer une chanson de ses favoris ou ses playlists
         - Un client doit pouvoir supprimer une playlist avec toutes les chansons contenues dans ladite playlist
 
-## Fonctionnalités optionnelles
+# Fonctionnalités optionnelles
 Les fonctionnalités listées ci-dessous ne sont pas nécessaires au bon fonctionnement de l'application mais pourront être réalisées si le temps le permet. Ces dernières ne sont pas dans un ordre précis.
 
-### Commun aux deux parties de l'application
+## Commun aux deux parties de l'application
 - **Fonction:** Support d'autres formats de musique
     - Objectif: Etendre les possibilités de lecture du serveur
     - Description: FLAC, ALAC, etc.
@@ -243,7 +250,7 @@ Les fonctionnalités listées ci-dessous ne sont pas nécessaires au bon fonctio
     - Contraintes: -
 
 
-### Côté serveur
+## Côté serveur
 - **Fonction:** Configuration avancée du serveur
     - Objectif: Options poussées pour la configuration du serveur
     - Description:
@@ -256,18 +263,18 @@ Les fonctionnalités listées ci-dessous ne sont pas nécessaires au bon fonctio
     - Contraintes: Refuser les actions effectuées par les clients si elles ne respectent pas la configuration du serveur
 
 
-## Résumé et schémas du fonctionnement du programme
-0. Un serveur est lancé et est configuré selon les préférences de la personne qui gère le serveur
-0. Le serveur est démarré et les clients peuvent s'y connecter
-0. Le client est lancé et voit la liste des serveurs disponibles
-0. Le client se connecte sur un serveur
-0. Une fois connecté, il peut effectuer les fonctionnalités paramétrées sur le serveur:
+# Résumé et schémas du fonctionnement du programme
+1. Un serveur est lancé et est configuré selon les préférences de la personne qui gère le serveur
+2. Le serveur est démarré et les clients peuvent s'y connecter
+3. Le client est lancé et voit la liste des serveurs disponibles
+4. Le client se connecte sur un serveur
+5. Une fois connecté, il peut effectuer les fonctionnalités paramétrées sur le serveur:
     - Proposer de nouvelles chansons
     - Voter pour changer ou organiser la playlist
     - Enregistrer en favoris des chansons ou la liste de lecture
-0. Le serveur enregistre la chanson en local et la lit au fur et à mesure de l'événement, en fonction des éventuelles préférences des utilisateurs
-0. Une fois l'événement terminé, la musique est conservée sur le serveur jusqu'à ce que l'administrateur décide de nettoyer la base de données ou que la capacité maximum de stockage soit atteinte
-0. Le client conserve une copie des metadatas des chansons qui lui ont plu dans sa base de données locale et peut, de ce fait, retrouver les morcaux qui lui ont plu lors de cet événement
+6. Le serveur enregistre la chanson en local et la lit au fur et à mesure de l'événement, en fonction des éventuelles préférences des utilisateurs
+7. Une fois l'événement terminé, la musique est conservée sur le serveur jusqu'à ce que l'administrateur décide de nettoyer la base de données ou que la capacité maximum de stockage soit atteinte
+8. Le client conserve une copie des metadatas des chansons qui lui ont plu dans sa base de données locale et peut, de ce fait, retrouver les morcaux qui lui ont plu lors de cet événement
 
 ![Schéma préliminaire du fonctionnement général](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/heig-vd-pro2017/cahier-des-charges/master/Overview.plantuml)
 
@@ -277,7 +284,7 @@ Les fonctionnalités listées ci-dessous ne sont pas nécessaires au bon fonctio
 
 \pagebreak
 
-## Spécifications techniques
+# Spécifications techniques
 L'application sera réalisée à l'aide des technologies suivantes:
 
 - Java ([java.com](java.com)): pour la réalisation du programme
@@ -300,28 +307,28 @@ Et s'exécutera sur les systèmes d'exploitation suivants:
 - Linux
 - Mac OS
 
-## Ressources à disposition et organisation
+# Ressources à disposition et organisation
 Le projet se déroulera sur tout le semestre pour un total de 90 heures de travail par personne, soit 540 heures de travail effectif sur 14 semaines. Cela représente environ six heures de travail par personne par semaine.
 Une métodologie AGILE sera appliquée afin d'avoir un suivi de l'évolution du travail.
 
-## Rendu
+# Rendu
 En plus des points évoqués dans les contraintes du cours PRO et selon les fonctionnalités importantes, le rendu sera de la forme suivante:
 
 - Un fichier .jar qui représentera le programme côté serveur
 - Un fichier de configuration du serveur
 - Un fichier .jar qui représente le programme côté client
 
-## Indicateurs et évaluation des résultats
+# Indicateurs et évaluation des résultats
 Les différentes itérations de la méthodologie AGILE permettront de quantifier l'avancement du travail et sa bonne réalisation.
 
 
-## Difficultés envisagées
+# Difficultés envisagées
 Les éléments suivants semblent être ceux qui devront prendre plus de temps pour leur réalisation au vu de leur complexité:
 
 - Envoi et gestion de fichiers
 - Interface graphique
 - Lecture de fichiers musicaux
 
-## Annexes
+# Annexes
 - Planification
 - Mockups de l'application
